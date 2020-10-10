@@ -3,7 +3,8 @@
 #### 진행기간: 2020.10.05 ~ 2020.11.22
 
 ## 스터디 방식
-- 강의 링크: http://www.kocw.or.kr/home/cview.do?mty=p&kemId=1046323
+- [강의 링크](http://www.kocw.or.kr/home/cview.do?mty=p&kemId=1046323)
+- [스터디 계획표](https://docs.google.com/document/d/1jr_C1HPOlWZyfXABOoK35qAyVdo-Q2w0BjivWbCJjR8/edit?usp=sharing)
 - 주차별 강의 들어오고 각자 파일 또는 블로그에 정리하여 공유
 - 모르는 부분이나 헷갈리는 부분 서로 공유
 - 각자 문제 2개이상씩 출제하여 풀이
