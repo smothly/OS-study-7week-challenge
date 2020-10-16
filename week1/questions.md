@@ -67,6 +67,8 @@ Q. DMA 컨트롤러가 하는일이 무엇인지?
 > A. I/O장치의 인터럽트를 너무 많이 걸경우 CPU에서 Memory로 가져오는 overhead가 너무 큼<br>
 DMA가 device의 buffer storage의 내용을 메모리에 block 단위로 직접 전송
 
+<br><br>
+
 Q. 커널 주소 공간 메모리의 code, stack, data 가 하는 일에 대해 설명해보기
 > A. 
 > - 코드: 커널코드 자원 관리, 시스템콜, 인터럽트 처리 코드
