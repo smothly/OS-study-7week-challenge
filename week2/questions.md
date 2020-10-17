@@ -19,8 +19,8 @@ Thread끼리 공유하는 부분과 공유하지 않는 부분을 나눠 주세�
 <br><br>
 
 - Q. 아래 코드는 process를 생성하고 수행하는 코드이다.<br>
-아래 코드를 실행했을 때의 출력과정을 설명해 주세요.
-![image](https://postfiles.pstatic.net/MjAxOTA0MjVfMzIg/MDAxNTU2MTU5OTEzNDY5.FuoBOg5ZeSt704Cdt8SMvYPP5hbi1LmeNeopISMre0Yg.O2BpprT44fL1LwX5wL5vQTbMNSz0WkdAl89uY79mrqYg.PNG.scy7351/image.png?type=w773)
+아래 코드를 실행했을 때의 출력과정을 설명해 주세요.<br>
+![image](https://user-images.githubusercontent.com/37397737/96326477-f1404c00-106b-11eb-8ccc-4a5786913a73.png)
 사진 출처: https://blog.naver.com/PostView.nhn?blogId=scy7351&logNo=221522253222&parentCategoryNo=&categoryNo=21&viewDate=&isShowPopularPosts=true&from=search
 
 > A. <br>
