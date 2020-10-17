@@ -26,3 +26,35 @@ Thread끼리 공유하는 부분과 공유하지 않는 부분을 나눠 주세�
 > A. <br>
 
 <br><br>
+1. 다음 코드에서 출력되는 값과 그 이유를 설명하시오.<br/>
+```c
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <stdio.h>
+#include <unistd.h>
+
+int value = 5;
+int main()
+{
+    pid_t pid;
+    pid = fork();
+    
+    if(pid == 0){
+        value += 15;
+        return 0;
+    }
+    else if(pid > 0){
+        wait(NULL);
+        printf("Parent: value = %d\n",value);
+        return 0;
+    }
+}
+```
+출처 : 운영체제(Operating System Concepts) 10th edition<br/><br/>
+
+2. O/X를 고르시오.<br/>
+- 같은 프로세스에 있는 각각의 쓰레드는 각각 가상 메모리 mapping을 가진다. (O/X)<br/>
+- 쓰레드는 프로세스보다 문맥 교환(context switch) 비용이 적다.(O/X)<br/>
+- 한 프로세스 내의 스레드들은 Code, Data, Heap 영역을 공유한다.(O/X)<br/>
+- 프로세스가 fork() 연산을 사용하여 새로운 프로세스를 생성할 때, 부모 프로세스와 자식 프로세스는 스택, 힙의 상태를 공유한다. (O/X)<br/>
+<br/><br/>
