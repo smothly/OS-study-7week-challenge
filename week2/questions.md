@@ -58,3 +58,26 @@ int main()
 - 한 프로세스 내의 스레드들은 Code, Data, Heap 영역을 공유한다.(O/X)<br/>
 - 프로세스가 fork() 연산을 사용하여 새로운 프로세스를 생성할 때, 부모 프로세스와 자식 프로세스는 스택, 힙의 상태를 공유한다. (O/X)<br/>
 <br/><br/>
+
+
+
+
+
+#### Q.1. Blocked와 Suspended의 차이 ?
+
+> Running, Ready, Blocked 모두 CPU 관점에서의 상태 분류일 뿐 실제로 **프로세스**의 작업이 수행이 되고 있는 상태 (CPU에서 프로세스 수행중(Running), I/O에서 프로세스 수행중(Blocked)) , 
+>
+> 반면 Suspended 는 **프로세스** 수행 자체가 외부에 의해 정지된 상태
+>
+> 따라서, 
+>
+> Blocked : Blocked 자신이 요청한 event가 만족되면 Ready
+>
+> Suspended : 외부에서 resume 해주어야 Active
+
+
+
+#### Q.2
+
+> 
+
