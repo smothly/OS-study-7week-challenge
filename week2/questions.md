@@ -58,7 +58,8 @@ int main()
     - 쓰레드는 프로세스보다 문맥 교환(context switch) 비용이 적다.(O/X)<br/>
     - 한 프로세스 내의 스레드들은 Code, Data, Heap 영역을 공유한다.(O/X)<br/>
 <br/>
-> A. 1) X => 스레드는 메모리를 공유한다. [참고](https://stackoverflow.com/questions/5440128/thread-context-switch-vs-process-context-switch)<br/>
+> A. <br/>
+1) X => 스레드는 메모리를 공유한다. [참고](https://stackoverflow.com/questions/5440128/thread-context-switch-vs-process-context-switch) <br/>
 2) O => 프로세스의 문맥 교환은 code,data,heap영역도 바뀌어야 하기 때문<br/>
 3) O => 스레드는 stack space, program counter만 따로 갖는다.<br/>
 <br/><br/>
