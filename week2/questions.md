@@ -3,18 +3,20 @@
 ---
 
 - Q. Program Counter, code section, register set, data section, OS resources, stack space 중<br>
-Thread끼리 공유하는 부분과 공유하지 않는 부분을 나눠 주세요.
+Thread와 공유하는 부분과 공유하지 않는 부분을 나눠 주세요.
 
 
 > A.<br>
-공유하는 부분: <br>
-공유하지 않는 부분:
+공유하는 부분: code section, data section, OS resources<br>
+공유하지 않는 부분:Program Counter, register set, stack space
 
 <br><br>
 
 - Q. Multi thread의 장점 중 한가지를 예시로 들어 설명해주세요. ex) 웹 브라우저
 
-> A.<br>
+> A.
+응답성(Responsiveness): 웹 브라우저를 멀티 스레드로 사용하면 한 스레드는 텍스트를 먼저 가져와 보여주고 이미지 같은 경우는 오래걸리므로 다른 스레드를 사용해 가져온다.<br>
+멀티 프로세싱 이용 (Utilization of MP Architectures): 행렬 곱셈 같이 독립적인 연산이 가능할 경우 멀티프로세싱이 필요한데 이 병렬 작업을 멀티스레드로 지원이 가능하다.
 
 <br><br>
 
@@ -24,6 +26,11 @@ Thread끼리 공유하는 부분과 공유하지 않는 부분을 나눠 주세�
 사진 출처: https://blog.naver.com/PostView.nhn?blogId=scy7351&logNo=221522253222&parentCategoryNo=&categoryNo=21&viewDate=&isShowPopularPosts=true&from=search<br>
 
 > A. <br>
+1. hello world 출력
+2. fork에서 자식프로세스가 생성되어 hello i am a child 출력
+3. ls 명령어 실행한 결과 출력
+4. 자식프로세스가 죽고 부모 프로세스로 감
+5. 부모프로세스에서 hello i am parent 출력하고 실행 끝
 
 <br><br>
 1. 다음 코드에서 출력되는 값과 그 이유를 설명하시오.<br/>
