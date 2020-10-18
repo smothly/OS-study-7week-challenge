@@ -96,17 +96,19 @@ int main()
 > 4. 스케줄링 및 프로세스의 우선순위
 
 
-######### Q1 ###########
 
-프로세스와 스레드의 협력 방식의 차이점에 대해 설명하시오
+<br><br>
 
-########################
-######### Q2 ###########
+- Q. 프로세스와 스레드의 협력 방식의 차이점에 대해 설명하시오
 
-한 프로세스가 long term scheduler에 의해 메모리에 올라간 후 대기하다 cpu를 점유한 후
+> A.프로세스는 협력 매커니즘(ipc)혹은 shared memory를 통해서 협력하고 스레드는 주소 공간(code, data, heap) 공유로 협력. 스레드간 공유가 속도가 빠르고 메모리 절약이 됨<br>
+<br><br>
+
+- Q. 한 프로세스가 long term scheduler에 의해 메모리에 올라간 후 대기하다 cpu를 점유한 후
 
 i/o request가 들어와 device controller에 관리되어진 후  i/o가 끝나 다시 memory로 돌아가는 과정을
 
 job queue, ready queue, device queue의 관점에서 서술하시오
 
-########################
+> A. second storage에 있는 jpb queue에서 메모리의 ready queue로 올라간 후 대기하다가 pcb가 우선순위를 갖게 됨 ->  우선순위가 있는 pcb가 i/o request를받으면 device queue로 옮겨가고 i/o가 끝나면 다시 ready queue<br>
+
