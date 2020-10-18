@@ -26,7 +26,7 @@ Thread끼리 공유하는 부분과 공유하지 않는 부분을 나눠 주세�
 > A. <br>
 
 <br><br>
-1. 다음 코드에서 출력되는 값과 그 이유를 설명하시오.<br/>
+- Q. 다음 코드에서 출력되는 값과 그 이유를 설명하시오.<br/>
 ```c
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -50,12 +50,17 @@ int main()
     }
 }
 ```
-출처 : 운영체제(Operating System Concepts) 10th edition<br/><br/>
-
-2. O/X를 고르시오.<br/>
-- 같은 프로세스에 있는 각각의 쓰레드는 각각 가상 메모리 mapping을 가진다. (O/X)<br/>
-- 쓰레드는 프로세스보다 문맥 교환(context switch) 비용이 적다.(O/X)<br/>
-- 한 프로세스 내의 스레드들은 Code, Data, Heap 영역을 공유한다.(O/X)<br/>
+출처 : 운영체제(Operating System Concepts) 10th edition<br/>
+> A. 출력된 값은 5이다. 자식 프로세스가 value +=15를 실행할 때 새로운 주소 공간으로 복제하기 때문에 부모 프로세스의 값은 변하지 않는다. <br/>
+<br/>
+- Q.O/X를 고르시오.<br/>
+    - 같은 프로세스에 있는 각각의 쓰레드는 각각 가상 메모리 mapping을 가진다. (O/X)<br/>
+    - 쓰레드는 프로세스보다 문맥 교환(context switch) 비용이 적다.(O/X)<br/>
+    - 한 프로세스 내의 스레드들은 Code, Data, Heap 영역을 공유한다.(O/X)<br/>
+<br/>
+> A. 1) X => 스레드는 메모리를 공유한다. [참고](https://stackoverflow.com/questions/5440128/thread-context-switch-vs-process-context-switch)<br/>
+2) O => 프로세스의 문맥 교환은 code,data,heap영역도 바뀌어야 하기 때문<br/>
+3) O => 스레드는 stack space, program counter만 따로 갖는다.<br/>
 <br/><br/>
 
 
