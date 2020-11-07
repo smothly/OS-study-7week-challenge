@@ -1,0 +1,2 @@
+[Chapter-6](https://docs.google.com/document/d/1wVWM0AZicGeh4LwVnXUqAAucIaYOlva18ystZZTGebQ/edit?usp=sharing)<br/>
+[Chapter-7](https://docs.google.com/document/d/1VvXgVtcbXRw4ATu9w-6uOubrb8pKJGd_qWw1MJ6Bl0s/edit?usp=sharing)<br/>
