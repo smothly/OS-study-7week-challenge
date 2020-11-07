@@ -59,3 +59,20 @@ Each philosopher{
 
 
 <br><br>
+
+
+
+
+- Q. 어떤 시스템이 3개의 프로세스를 가지고 있는데, 각 프로세스는 2개의 리소스를 필요로 한다. 데드락이 일어나지 않는것을 보장할 최소 리소스의 갯수는?
+
+<br><br>
+
+
+- Q. 세 개의 병렬 프로세스 x, y,, z가 서로 다른 code segment를 갖고 메모리를 공유한다. process x는 세마포어 a,b,c y는 bb,c,d z는 c,d,a를 각각의 code segment를 실행하기전 요구한다. 각각 그들의 code segment를 끝내면 signal(V) 오퍼레이션을 실시한다. 모든 세마포어는 바이너리 세마포어이며 1로 초기화되었다고 생각하자. 어떤 순서도가 데드락의 염려가 없을까?
+
+(A) X: P(a)P(b)P(c) Y:P(b)P(c)P(d) Z:P(c)P(d)P(a)
+(B) X: P(b)P(a)P(c) Y:P(b)P(c)P(d) Z:P(a)P(c)P(d)
+(C) X: P(b)P(a)P(c) Y:P(c)P(b)P(d) Z:P(a)P(c)P(d)
+(D) X: P(a)P(b)P(c) Y:P(c)P(b)P(d) Z:P(c)P(d)P(a)
+
+<br><br>
