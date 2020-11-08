@@ -87,7 +87,4 @@ Each philosopher{
 
 <br><br>
 
-- Q. Deadlock avoidance에서 Banker's algorithm의 순서도 기준과 Deadlock Detection & Recovery에서 나온 Detection 순서도 기준의 차이는 무엇인가?
-
-
-
+- Q. Deadlock avoidance에서 Banker's algorithm과 Deadlock Detection & Recovery에서 나온 Detection 방법의 다음 할당할 프로세스를 결정하는 기준은 어떻게 다른가?
