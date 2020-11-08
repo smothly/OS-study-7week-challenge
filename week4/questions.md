@@ -41,19 +41,21 @@ Each philosopher{
     think();
 }while(1);
 ```
-<br/>
-> Answer. 
-     ```c
-     // (A)는 젓가락을 얻지 못한 경우을 뜻한다. 그러므로 기다려야 한다.
-     if(state[i] != eating)     
-         self[i].wait();
-     
-     //(B)는 본인의 양쪽이 먹지 않고, 본인의 상태가 배고픈지를 확인한다 => 본인의 차례인지 확인한다.
-     (state[(i+4)%5] != eating) && (state[i] == hungry) && (state[(i+1)%5] != eating)
-     
-     // (C) 초기화 코드로 철학자는 thinking이 기본이다.
-     state[i] = thinking;
-     ```
+
+<br>
+> Answer.
+
+```c
+// (A)는 젓가락을 얻지 못한 경우을 뜻한다. 그러므로 기다려야 한다.
+if(state[i] != eating)     
+    self[i].wait();
+
+//(B)는 본인의 양쪽이 먹지 않고, 본인의 상태가 배고픈지를 확인한다 => 본인의 차례인지 확인한다.
+(state[(i+4)%5] != eating) && (state[i] == hungry) && (state[(i+1)%5] != eating)
+
+// (C) 초기화 코드로 철학자는 thinking이 기본이다.
+state[i] = thinking;
+```
 
      
 <br/>
@@ -128,12 +130,15 @@ Each philosopher{
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FblltLz%2FbtqMRlDdlpN%2FLFlESoN4Cz5LM2s8kqJJy1%2Fimg.png)<br>
 위 그림에서 starvation이 어떤경우에 발생하는지 설명하고, 어떻게 해결해야하는지 설명하시오.
 
-> A.
+> A. reader가 계속해서 들어오는 경우 writer가 들어오지 못하는 starvation문제가 발생한다.<br>
+일정 시간동안 writer가 기다리면 reader를 ready queue로 보낸다.<br>
+일정 수의 reader가 지나가면 reader는 ready queue로 보낸다.
 
 <br><br>
 
 Q. <br>
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbpfdY0%2FbtqMRkEmpkK%2FGRgHCPUKTgeJMzlViQHAL0%2Fimg.png)<br>
 Deadlock Avodance내 Banker`s Algorithm을 보수적이라고 설명하는 이유를 위 그림에서 예를들어 설명해주세요.
-
-> A.
+> A. 할당자원으로 가능함에도 최대 요청 수를 기준으로 판단하기 때문이다.<br>
+위의 예시에서는 P0가 실제로 max만큼의 자원이 필요하지 않고, 3 / 3/ 2 만큼의 자원이 필요할 수도 있다.<br>
+하지만, 최악의 경우를 생각하기 떄문에 할당하지 못한다.
