@@ -1,10 +1,6 @@
 ## 4주차 문제
 
 ---
-
-- Q. 우리나라의 수도는?
-> A. 서울
-
 - Q. 다음은 dining philosopher problem을 monitor로 풀어내는 코드이다. (A),(B),(C)에 들어가는 코드와 코드의 의미를 작성하시오.
 
 ```c
@@ -88,3 +84,19 @@ Each philosopher{
 <br><br>
 
 - Q. Deadlock avoidance에서 Banker's algorithm과 Deadlock Detection & Recovery에서 나온 Detection 방법의 다음 할당할 프로세스를 결정하는 기준은 어떻게 다른가?
+
+<br><br>
+
+- Q. <br>
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FblltLz%2FbtqMRlDdlpN%2FLFlESoN4Cz5LM2s8kqJJy1%2Fimg.png)<br>
+위 그림에서 starvation이 어떤경우에 발생하는지 설명하고, 어떻게 해결해야하는지 설명하시오.
+
+> A.
+
+<br><br>
+
+Q. <br>
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbpfdY0%2FbtqMRkEmpkK%2FGRgHCPUKTgeJMzlViQHAL0%2Fimg.png)<br>
+Deadlock Avodance내 Banker`s Algorithm을 보수적이라고 설명하는 이유를 위 그림에서 예를들어 설명해주세요.
+
+> A.
