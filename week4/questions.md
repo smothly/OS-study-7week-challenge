@@ -42,7 +42,8 @@ Each philosopher{
 }while(1);
 ```
 <br/>
-> A  ```c
+> Answer. 
+     ```c
      // (A)는 젓가락을 얻지 못한 경우을 뜻한다. 그러므로 기다려야 한다.
      if(state[i] != eating)     
          self[i].wait();
@@ -67,7 +68,8 @@ Each philosopher{
 2) Available = (1, 0, 0, 2)
 
 <br/>
-> A. 필요한 자원은 아래와 같이 변할 것이다. <br/>
+> Answer
+    필요한 자원은 아래와 같이 변할 것이다. <br/>
 
    <img src="https://github.com/gashe-soo/OS-7week-KOCW/blob/main/asset/week4_problem_answer.jpg?raw=true" alt="week4_problem_answer.jpg"  />
 
