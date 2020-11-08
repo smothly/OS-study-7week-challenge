@@ -76,3 +76,15 @@ Each philosopher{
 (D) X: P(a)P(b)P(c) Y:P(c)P(b)P(d) Z:P(c)P(d)P(a) <br>
 
 <br><br>
+
+
+
+
+- Q. Semaphore를 이용한 동기화 코드와 Monitor을 이용한 동기화 코드간의 차이점은 어떤것들이 있는가?
+
+
+
+
+<br><br>
+
+- Q. Deadlock avoidance에서 Banker's algorithm의 순서도 기준과 Deadlock Detection & Recovery에서 나온 Detection 순서도 기준의 차이는 무엇인가?
