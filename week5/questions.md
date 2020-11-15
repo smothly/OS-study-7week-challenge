@@ -19,6 +19,8 @@ TLB hit ratio = 0.95
 
 ---
 
-- Q. 64-bit logical address를 가진 시스템에서, 각 page의 크기가 4Kb라면 각 프로세스당 page table의 크기는 몇 바이트인가? (single-layer)
+- Q. 32-bit logical address를 가진 시스템에서, 각 page의 크기가 4Kb라면 각 프로세스당 page table의 크기는 몇 바이트인가? (single-layer)
+
+- Q. 64-bit logical address를 가진 시스템에서, 각 page의 크기가 4Kb이고 page table의 크기가 page와 같아야한다면 총 몇겹의 page table이 필요한가?
 
 - Q. Paging, Segmentation, Paged Segmentation에서 각각 physical memory의 구현 방법을 어떻게 되어있는가? Segmentation에서 각 segment의 physical memory는 무엇에 비례하는가?
