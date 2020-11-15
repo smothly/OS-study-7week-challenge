@@ -21,15 +21,21 @@ TLB hit ratio = 0.95
 
 <br><br>
 
-- Q. 32-bit logical address를 가진 시스템에서, 각 page의 크기가 4Kb라면 각 프로세스당 page table의 크기는 몇 바이트인가? (single-layer)
+- Q. 32-bit logical address를 가진 시스템에서, 각 page의 크기가 4Kb라면 각 프로세스당 page table의 엔트리의 갯수는 몇인가? (single-layer)
+
+> A. 2<sup>32</sup> / 2<sup>12</sup> (4Kb) = 2<sup>20</sup>.
 
 <br><br>
 
 - Q. 64-bit logical address를 가진 시스템에서, 각 page의 크기가 4Kb이고 page table의 크기가 page와 같아야한다면 총 몇겹의 page table이 필요한가?
 
+> A. 5개. Page의 크기가 4Kb (2<sup>12</sup>) 임으로 2<sup>64</sup> / 2<sup>12</sup> = 2<sup>52</sup>개의 엔트리를 수용해야한다. 하지만 page table의 크기가 2<sup>12</sup>로 제한되기에 적어도 2<sup>52</sup>을 5번을 나눠주어야 모든걸 수용가능하다.
+
 <br><br>
 
 - Q. Paging, Segmentation, Paged Segmentation에서 각각 physical memory의 구현 방법을 어떻게 되어있는가? Segmentation에서 각 segment의 physical memory는 무엇에 비례하는가?
+
+> A. Paging와 paged segmentation은 frame으로 구현이 되어있고 보통 page와 frame의 크기는 일치한다. Segmentation에서 physical memory는 logical memory에서의 segment의 크기와 비례한다.
 
 <br><br>
 
