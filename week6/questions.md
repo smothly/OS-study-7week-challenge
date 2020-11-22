@@ -42,9 +42,13 @@
 
 - Q. PFF와 Working Set Model의 공통점과 차이점은?
 
+> A. 둘다 thrashing을 해결하기 위한 알고리즘이지만, working set은 그때 특정 프로세스가 필요할 최소한의 frame을 할당함으로서 thrashing이 일어나지 않도록 미연에 방지하지만, PFF는 page fault가 난후에 결과에 따라 frame 할당을 조절한다.
+
 <br><br>
 
 - Q. LRU와 LFU 알고리즘의 작동 방법과 시간측면도는?
+
+> A. LRU는 doubly linked list와 각각 노드들을 해쉬테이블에 저장함으로써 모든 작업을 O(1)으로 할수 있다. LFU는 힙으로 구현하면 O(log n)으로 가능하지만, 각 frequency를 LRU로서 구현을 하면 사실상 모든 작업을 O(1)로 구현할수도 있다. 자세한 구현방법은 [Implementation](https://leetcode.com/problems/lfu-cache/discuss/207673/Python-concise-solution-**detailed**-explanation%3A-Two-dict-%2B-Doubly-linked-list)을 참조.
 
 <br><br>
 
