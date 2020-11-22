@@ -47,3 +47,18 @@
 - Q. PFF와 Working Set Model의 공통점과 차이점은?
 
 - Q. LRU와 LFU 알고리즘의 작동 방법과 시간측면도는?
+
+- Q. page를 캐싱하는데에 있어 LRU, LFU를 쓰지 못하는 이유를 설명하시오.
+
+> A.
+
+<br><br>
+
+- Q. 옳지 않은 설명을 모두 고르시오. 옳지 않은 이유도 설명해주시오.
+    - a. 디렉토리도 하나의 파일이다.
+    - b. 파일시스템에서 버퍼캐시는 커널메모리 내부에 있다.
+    - c. LRU, LFU 알고리즘을 파일 버퍼캐시에 사용이 가능하다.
+    - d. file descriptor table은 system전체에 하나로 존재한다.
+
+> A. d
+> - d - process마다 존재하다. open file table이 시스템 전체에 존재한다.
