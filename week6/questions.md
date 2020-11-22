@@ -43,3 +43,7 @@
 
 
 ​		A) Offline Algorithm통해
+
+- Q. PFF와 Working Set Model의 공통점과 차이점은?
+
+- Q. LRU와 LFU 알고리즘의 작동 방법과 시간측면도는?
