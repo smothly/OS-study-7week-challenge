@@ -61,3 +61,12 @@
 * <br>
 * A. File meta data는 그 파일을 가지고 있는 디렉토리에 가면 기록되어있다고 했는데 실제 파일시스템에서는 디렉토리가 다 가지고 있지 않고 별도의 위치에 저장
   (디렉토리에 파일 이름과 Inode번호가 저장)
+
+* Q. Free-space management (비어있는블록 관리) 에서 grouping 방식에 대해 간단히 설명하시오
+* <br>
+* <br>
+* A. 첫 번째 비어있는 위치가 인덱스 역할->비어있는 곳들을 가르킴
+  - Linked list방법의 변형
+  - 첫 번째 free block이 n개의 pointer를 가짐
+    - n-1 pointer는 free data block을 가리킴
+    - 마지막 pointer가 가리키는 block은 또 다시 n pointer를 가짐
